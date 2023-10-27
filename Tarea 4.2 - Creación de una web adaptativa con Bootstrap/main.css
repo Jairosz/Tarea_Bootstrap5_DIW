@@ -62,7 +62,7 @@
     background-size: cover;
 }
 header{
-    height: 10vh;
+    height: 12vh;
 }
 @media (min-width: 768px) {
     .imagen-main {
