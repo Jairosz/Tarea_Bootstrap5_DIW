@@ -1,43 +1,71 @@
-.mod-logo{
-    background-image: url(https://www.mcfit.com/typo3conf/ext/bra_projectfiles_mcfitcom/Resources/Public/facelift2019/build/assets/img/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 66px;
-    min-width: 33px;
-    width: 50px;
-    z-index: 1;
-    margin-right: 2.8vw;
-    margin-left: 1.8vw;
-    margin-bottom: 1.8vh;
-    margin-top: 1.8vh;
+:root{
+    --main-color: black;
+    --bg-color: white;
+}
 
+.nav-logo{
+    width: 86px;
+    height: 70px;
+    margin-left: 1vw;
 }
-.background-black{
-    background-color: white;
+
+.nav-link:hover{
+    color: rgb(227, 163, 39);
 }
-a{
-    margin-top: 2.8vh;
-    font-size: 1.0625rem;
-    font-family: 'Arial';
+.banner{
+    display: flex;
+}
+.nav-item-separation{
+    margin-left: 2.5vw;
+}
+.row >* {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.banner-color{
+    background-color: rgb(255, 255, 255);
+}
+.nav-item-color{
+    color: rgb(43, 50, 61);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.text {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--bg-color);
+    font-family:  sans-serif;
+    font-size:  5.5rem;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px; 
     text-align: center;
-    font-weight: bold;
 }
-.firstA{
-    margin-left: 10vw;
+.subtext {
+    position: absolute;
+    font-size:  2rem;
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.376);
+    text-align: center;
 }
-.nav-link{
-    color: black;
-    font-weight: bold;
+.imagen-main{
+    background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030558/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565');
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.nav{
-    --bs-nav-link-hover-color: rgb(255, 213, 0);
+header{
+    height: 10vh;
 }
-
-img{
-    max-width: 100%;
-}
-
-main > div.row > * {
-    padding-left: 0;
-    padding-right: 0;
+@media (min-width: 768px) {
+    .imagen-main {
+        background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080');
+    }
 }
