@@ -58,7 +58,7 @@
 }
 .imagen-main{
     background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030558/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565');
-    height: 89vh;
+    height: 69vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,9 +86,21 @@ header{
 .inscripcion:hover a {
     color: white;
 }
+.submain1{
+    background-color:rgb(63, 77, 90) ;
+    height: 30vh;
+}
+.submain2{
+    background-color:rgb(white) ;
+    height: 30vh;
+}
+.display{
+    display: none;
+}
 @media (min-width: 768px) {
     .imagen-main {
         background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080');
+        height: 89vh;
     }
     .text {
         text-transform: uppercase;
@@ -123,6 +135,18 @@ header{
     }
     .inscripcion{
         height: fit-content;
+        margin-left: 3vw;
 
+    }
+    .display{
+        display: flex;
+    }
+    .submain1{
+        background-color:rgb(63, 77, 90) ;
+        height: 30vh;
+    }
+    .submain2{
+        background-color:rgb(white) ;
+        height: 30vh;
     }
 }
