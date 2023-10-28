@@ -20,8 +20,8 @@
     margin-left: 2.5vw;
 }
 .row >* {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 .banner-color{
     background-color: rgb(255, 255, 255);
@@ -58,7 +58,7 @@
 }
 .imagen-main{
     background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030558/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565');
-    height: 69vh;
+    height: 89vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +92,7 @@ header{
 }
 .submain2{
     background-color:rgb(white) ;
-    height: 30vh;
+    height: 50vh;
 }
 .display{
     display: flex;
@@ -104,10 +104,10 @@ header{
         font-weight: 900;
         color: var(--main-text-color);
         font-family:  sans-serif;
-        font-size:  3rem;
+        font-size:  4.1rem;
         position: absolute;
         top: 65%; 
-        left: 35%; 
+        left: 50%; 
         transform: translate(-50%, -50%); 
         padding: 10px; 
         text-align: center;
@@ -118,6 +118,18 @@ header{
     .imagen-main {
         background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080');
         height: 89vh;
+        background-position: 80% 50%;
+    }
+    .inscripcion{
+        margin-left: 15vw;
+        text-align: center;
+        background: #ffdd03;
+        border-radius: 3px;
+        height: 48px;
+        padding: 13px 32px;
+        line-height: 1.4;
+        box-shadow: 0 2px 14px -8px rgba(0,0,0,0.7);
+        margin-right: 1rem;
     }
 
 }
@@ -159,19 +171,28 @@ header{
     }
     .inscripcion{
         height: fit-content;
-        margin-left: 3vw;
+        margin-left: 4vw;
 
     }
     .display{
         display: flex;
     }
     .submain1{
-        background-color:rgb(63, 77, 90) ;
-        height: 30vh;
+        background-color: white;
+        height: 50vh;
     }
     .submain2{
-        background-color:rgb(white) ;
+        background-color: rgb(61, 74, 87);
         height: 50vh;
-    /* INCOMPATIBILIDAD ENTRE LOS COL MD LG Y TAL CON LOS MEDIA QUERY (FIXEAR)*/ 
     }
+    
+}
+
+@media (min-width: 992px) {
+    .inscripcion{
+        height: fit-content;
+        margin-left: 15vw;
+
+    }
+
 }
