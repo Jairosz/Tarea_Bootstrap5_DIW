@@ -97,6 +97,30 @@ header{
 .display{
     display: none;
 }
+@media (min-width: 576px) {
+
+    .text {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: var(--main-text-color);
+        font-family:  sans-serif;
+        font-size:  3rem;
+        position: absolute;
+        top: 65%; 
+        left: 35%; 
+        transform: translate(-50%, -50%); 
+        padding: 10px; 
+        text-align: center;
+        letter-spacing: 1px;
+        
+
+    }
+    .imagen-main {
+        background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080');
+        height: 89vh;
+    }
+
+}
 @media (min-width: 768px) {
     .imagen-main {
         background-image: url('https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080');
@@ -147,6 +171,7 @@ header{
     }
     .submain2{
         background-color:rgb(white) ;
-        height: 30vh;
+        height: 50vh;
+    /* INCOMPATIBILIDAD ENTRE LOS COL MD LG Y TAL CON LOS MEDIA QUERY (FIXEAR)*/ 
     }
 }
