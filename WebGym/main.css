@@ -9,6 +9,9 @@
     height: 70px;
     margin-left: 1vw;
 }
+ul{
+    margin: 1vh;
+}
 
 .nav-link:hover{
     color: rgb(227, 163, 39);
