@@ -3,8 +3,15 @@
     --hover-text-color: white;
     --main-text-color: white;
 }
+/* Añadir Rise UP en sub Textos
+ Fixear Hamburguer Menu
+ Añadir mas sections
+ Añadir Rise up en imagenes
+ Añadir Sombras en imagenes
+ Añadir Carrusel
 
-@keyframes fall-in { /*Animacion Texto Main */
+*/
+@keyframes fall-in { /*Animacion Caída desde el top (Texto Main) */
     0% {
         top: -50%;
         
@@ -19,6 +26,16 @@
         
     }
 }
+@keyframes rise-up {
+    0% {
+      top: 100%; 
+      opacity: 0; 
+    }
+    100% {
+      top: 50%;
+      opacity: 1; 
+    }
+  }
 
 .nav-logo {
     width: 86px;
@@ -70,6 +87,7 @@ ul {
     padding: 10px;
     text-align: center;
     letter-spacing: 1px;
+    animation: fall-in 1.5s ease both; 
 }
 
 .subtext {
