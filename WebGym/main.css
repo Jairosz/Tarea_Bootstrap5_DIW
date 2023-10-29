@@ -3,6 +3,7 @@
     --hover-text-color: white;
     --main-text-color: white;
 }
+
 /* Añadir Rise UP en sub Textos
  Fixear Hamburguer Menu
  Añadir mas sections
@@ -11,41 +12,79 @@
  Añadir Carrusel
 
 */
-@keyframes fall-in { /*Animacion Caída desde el top (Texto Main) */
+@keyframes fall-in {
+
+    /*Animacion Caída desde el top (Texto Main) */
     0% {
         top: -50%;
-        
+
         opacity: 0;
-       
+
     }
 
     100% {
         top: 50%;
-        
+
         opacity: 1;
-        
+
     }
 }
-@keyframes rise-up1 { /*Animacion Subida desde el bottom PARA 992px/1200px */
+
+@keyframes rise-up1 {
+
+    /*Animacion Subida desde el bottom PARA 992px/1200px */
     0% {
-      top: 100%;
-      opacity: 0;
+        top: 100%;
+        opacity: 0;
     }
+
     100% {
-      top: 10%;
-      opacity: 1;
+        top: 10%;
+        opacity: 1;
     }
 }
-@keyframes rise-up2 { /*Animacion Subida desde el bottom PARA res MOVIL y 576px */
+
+@keyframes rise-up2 {
+
+    /*Animacion Subida desde el bottom PARA res MOVIL y 576px */
     0% {
-      top: 100%;
-      opacity: 0;
+        top: 100%;
+        opacity: 0;
     }
+
     100% {
-      top: -50%;
-      opacity: 1;
+        top: -50%;
+        opacity: 1;
     }
 }
+@keyframes rise-up3 {
+
+    /*Animacion Subida para texto*/
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 80%;
+        opacity: 1;
+    }
+}
+@keyframes rise-up4 {
+
+    /*Animacion Subida para texto responsive*/
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 70%;
+        opacity: 1;
+    }
+}
+
+
 
 
 .nav-logo {
@@ -98,7 +137,7 @@ ul {
     padding: 10px;
     text-align: center;
     letter-spacing: 1px;
-    animation: fall-in 1.5s ease both; 
+    animation: fall-in 1.5s ease both;
 }
 
 .subtext {
@@ -111,6 +150,8 @@ ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.376);
     text-align: center;
+    animation: raise-up3 1.5s ease both;
+
 }
 
 .imagen-main {
@@ -171,8 +212,8 @@ header {
     left: 10%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     animation: rise-up2 1s ease-in-out;
-    animation-delay: 1s; 
-    animation-fill-mode: forwards; 
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 
 
 
@@ -275,8 +316,8 @@ header {
         left: 20%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
         animation: rise-up2 1s ease-in-out;
-        animation-delay: 1s; 
-        animation-fill-mode: forwards;     
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
 
     .text {
@@ -381,6 +422,8 @@ header {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.376);
         text-align: center;
+        animation: rise-up4 1s ease-in-out;
+
     }
 
     .banner ul {
@@ -418,9 +461,9 @@ header {
         left: -20%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
         animation: rise-up1 1s ease-in-out;
-        animation-delay: 1s; 
-        animation-fill-mode: forwards;  
-      
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
 
     }
 
@@ -451,8 +494,8 @@ header {
         left: -20%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
         animation: rise-up1 1s ease-in-out;
-        animation-delay: 1s; 
-        animation-fill-mode: forwards; 
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
 
     .programa {
@@ -515,9 +558,9 @@ header {
         left: -10%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
         animation: rise-up1 1s ease-in-out;
-        animation-delay: 1s; 
-        animation-fill-mode: forwards;  
-      
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
 
     }
 
