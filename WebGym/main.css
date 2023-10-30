@@ -83,6 +83,27 @@
         opacity: 1;
     }
 }
+#carrusel {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#imagenes {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.imagen {
+    width: 400px;
+    height: 300px;
+}
+
+#anterior, #siguiente {
+    cursor: pointer;
+    font-size: 24px;
+}
 
 
 
@@ -358,6 +379,11 @@ header {
 }
 
 @media (min-width: 768px) {
+    .boton1{
+        margin-top: 5vh;
+        margin-left: 5vw;
+    }
+
     .programa {
         position: absolute;
         width: 45vw;
@@ -536,13 +562,18 @@ header {
 @media (min-width: 1200px) {
     .submain1 {
         background-color: white;
-        height: 70vh;
+        height: 60vh;
     }
 
     .submain2 {
         background-color: rgb(61, 74, 87);
-        height: 70vh;
+        height: 60vh;
     }
+    .submain3 {
+        background-color:rgb(33, 37, 44);
+        height: 60vh;
+    }
+    
 
     .inscripcion {
         height: fit-content;
@@ -567,7 +598,7 @@ header {
     .programa {
         position: absolute;
         width: 45vw;
-        top: 87%;
+        top: 79%;
         left: 25%;
         transform: translate(-50%, 50%);
     }
