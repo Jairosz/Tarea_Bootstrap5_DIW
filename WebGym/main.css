@@ -94,11 +94,7 @@ h2 {
     /* Centra el texto dentro de los elementos h2 */
 }
 
-.btn-check:checked+.btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check)+.btn:active {
+.btn-check:checked+.btn,.btn.active,.btn.show,.btn:first-child:active,:not(.btn-check)+.btn:active {
     background-color: var(--boton-color);
     /* Define el color de fondo de los botones en varios estados utilizando una variable CSS personalizada */
 }
