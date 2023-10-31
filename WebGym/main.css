@@ -7,39 +7,49 @@
 
 
 /* COLORES */
-:root{ 
-    --background-color-white:rgb(255, 255, 255); 
-    --background-color-grey:rgb(64, 78, 91) ; 
+:root {
+    --background-color-white: rgb(255, 255, 255);
+    --background-color-grey: rgb(64, 78, 91);
     --background-color-grey-faded: rgb(29, 33, 40);
     --boton-color: rgb(222, 192, 0);
-    --title-text-color:rgb(51, 65, 79);
-    --title-text-msg:rgb(255, 255, 255);
-   }
-   /* FIN COLORES */
-   /* ESTILOS DEL NAVBAR */ 
-   a > img{  /* Tamaño logo del NAV*/
-       width: 10vw;
-       margin-left: 3.5vw;
-   }
-   .nav-link{   /* Colores letras del nav*/
-       color: var(--title-text-color);
-       font-weight: bold;
-   }
-   .navbar-light .nav-link:hover { /* Color Hover del NAV*/
-       color: var(--boton-color); 
-   }
-   /* FIN ESTILOS DEL NAVBAR */ 
-   /* ESTILOS SECTION1 */
-   .imgOferta{ /* BACKGROUND INICIAL */ 
-       background-repeat: no-repeat;
-       height: 36.8rem; 
-       background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030558/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565");
-       background-size: cover;
-       -webkit-animation: fade-in 2s ease-in-out;
-               animation: fade-in 2s ease-in-out;  
-   }
-   .headline {  /* MEGACHOLLO STYLE */ 
-    /* CAMBIAR POSICION */ 
+    --title-text-color: rgb(51, 65, 79);
+    --title-text-msg: rgb(255, 255, 255);
+}
+
+/* FIN COLORES */
+/* ESTILOS DEL NAVBAR */
+a>img {
+    /* Tamaño logo del NAV*/
+    width: 10vw;
+    margin-left: 3.5vw;
+}
+
+.nav-link {
+    /* Colores letras del nav*/
+    color: var(--title-text-color);
+    font-weight: bold;
+}
+
+.navbar-light .nav-link:hover {
+    /* Color Hover del NAV*/
+    color: var(--boton-color);
+}
+
+/* FIN ESTILOS DEL NAVBAR */
+/* ESTILOS SECTION1 */
+.imgOferta {
+    /* BACKGROUND INICIAL */
+    background-repeat: no-repeat;
+    height: 36.8rem;
+    background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030558/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565");
+    background-size: cover;
+    -webkit-animation: fade-in 2s ease-in-out;
+    animation: fade-in 2s ease-in-out;
+}
+
+.headline {
+    /* MEGACHOLLO STYLE */
+    /* CAMBIAR POSICION */
     text-align: center;
     color: #fff;
     font-weight: bolder;
@@ -47,50 +57,105 @@
     width: 100%;
     text-shadow: 0px 2px 6px black;
     letter-spacing: 4px;
-  }
-  
-   
-   /* FIN /* ESTILOS SECTION1 */ 
-   
-   
-   /*MEDIA QUERY*/
-   @media (min-width: 576px) { /* SMALL DEVICE*/
-   }
-   @media (min-width: 768px) { /* MEDIUM DEVICE*/
-   }
-   @media (min-width: 992px) { /* LARGE DEVICE*/
-   }
-   @media (min-width: 1200px) { /* EXTRA-LARGE DEVICE*/
-   }
-   @media (min-width: 1400px) { /* EXTRA-EXTRA-LARGE DEVICE*/
-   }
-   /*FIN MEDIA QUERY*/
-   /* ANIMACIONES */
-   @-webkit-keyframes fade-in {
-       0% {
-         opacity: 0; /* Inicio con opacidad 0 (invisible) */
-       }
-       100% {
-         opacity: 1; /* Final con opacidad 1 (visible) */
-       }
-     }
-   @keyframes fade-in {
-       0% {
-         opacity: 0; /* Inicio con opacidad 0 (invisible) */
-       }
-       100% {
-         opacity: 1; /* Final con opacidad 1 (visible) */
-       }
-     }
-     /* FIN ANIMACIONES */
+}
+
+/* FIN  ESTILOS SECTION1 */
+/* ESTILOS SECTION2 */
+div>img {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    /* Añade una sombra con un desplazamiento de 4px en horizontal y 4px en vertical a las imágenes dentro de un elemento div */
+    transform: translateY(40px);
+    /* Desplaza las imágenes hacia abajo 40px */
+}
+
+.bg-grey {
+    background-color: var(--background-color-grey);
+    /* Define el color de fondo para elementos con la clase "bg-grey" utilizando una variable CSS personalizada */
+}
+
+.bg-white {
+    background-color: var(--background-color-white);
+    /* Define el color de fondo para elementos con la clase "bg-white" utilizando una variable CSS personalizada */
+}
+
+h1 {
+    font-weight: bold;
+    /* Establece el peso de la fuente a negrita para los elementos h1 */
+    font-size: 1.5rem;
+    /* Establece el tamaño de fuente para h1 a 1.5rem */
+}
+
+h2 {
+    font-weight: bold;
+    /* Establece el peso de la fuente a negrita para los elementos h2 */
+    font-size: 1rem;
+    /* Establece el tamaño de fuente para h2 a 1rem */
+    text-align: center;
+    /* Centra el texto dentro de los elementos h2 */
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: var(--boton-color);
+    /* Define el color de fondo de los botones en varios estados utilizando una variable CSS personalizada */
+}
 
 
 
 
 
-     /*anotaciones 
+/* FIN  ESTILOS SECTION2 */
+
+
+
+/*MEDIA QUERY*/
+@media (min-width: 576px) {
+    /* SMALL DEVICE*/
+}
+
+@media (min-width: 768px) {
+    /* MEDIUM DEVICE*/
+}
+
+@media (min-width: 992px) {
+    /* LARGE DEVICE*/
+}
+
+@media (min-width: 1200px) {
+    /* EXTRA-LARGE DEVICE*/
+}
+
+@media (min-width: 1400px) {
+    /* EXTRA-EXTRA-LARGE DEVICE*/
+}
+
+/*FIN MEDIA QUERY*/
+/* ANIMACIONES */
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+        /* Inicio con opacidad 0 (invisible) */
+    }
+
+    100% {
+        opacity: 1;
+        /* Final con opacidad 1 (visible) */
+    }
+}
+
+
+
+/* FIN ANIMACIONES */
+
+
+
+
+
+/*anotaciones 
      https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030557/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565_1
      https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1
      backgrounds para CONTRATOS
      */
-     
