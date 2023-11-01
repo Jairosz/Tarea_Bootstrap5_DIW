@@ -68,7 +68,7 @@ a > img {
 #AppButton:hover {
   /* ESTILOS BOTONES HOVER */
   background-color: var(--background-color-grey);
-  color: black;
+  color: white;
 }
 
 .paddingBlock {
@@ -201,10 +201,28 @@ img {
 /*MEDIA QUERY*/
 @media (min-width: 576px) {
   /* SMALL DEVICE*/
+  strong{
+    font-size: 20px; 
+  }
+  li{
+    font-size: 18px;
+  }
+  h2 {
+    /* Tamaño */
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   /* MEDIUM DEVICE*/
+  .translatedX1 {
+    transform: translateX(-40px);
+    /* Desplaza las imágenes hacia abajo 40px */
+  }
+  .translatedX2 {
+    transform: translateX(40px);
+    /* Desplaza las imágenes hacia abajo 40px */
+  }
  
 }
 
