@@ -13,7 +13,8 @@
   --boton-color: rgb(222, 192, 0);
   --title-text-color: rgb(51, 65, 79);
   --title-text-msg: rgb(255, 255, 255);
-  --background-contactos: rgb(113, 28, 77);
+  --background-contactos: rgb(189, 91, 149);
+  --background-contactosdark: rgb(141, 29, 94);
 }
 
 /* FIN COLORES */
@@ -342,6 +343,55 @@ img {
     /* Final con opacidad 1 (visible) */
   }
 }
+/* Configuración del contenedor principal con perspectiva para la animación */
+.wrapper-inner {
+    perspective: 1000px; /* Efecto de perspectiva en 3D para la animación */
+    height: 100%; /* Establece la altura del contenedor */
+    min-height: 20rem; /* Altura mínima para evitar cambios bruscos en el diseño */
+}
+
+/* Estilo de la tarjeta personalizada que se animará */
+.custom-card {
+    width: 100%; /* Ancho completo */
+    aspect-ratio: 320 / 480; /* Relación de aspecto de la tarjeta (ancho/alto) */
+    position: relative; /* Posición relativa para elementos secundarios */
+    transform-style: preserve-3d; /* Mantiene el estilo 3D para la animación */
+    transition: transform 0.5s; /* Transición suave para la rotación de la tarjeta */
+}
+
+/* Rotación de la tarjeta cuando el ratón está encima */
+.wrapper-inner:hover .custom-card {
+    transform: rotateY(180deg); /* Gira 180 grados en el eje Y al pasar el ratón */
+}
+
+/* Estilo de la imagen en la tarjeta */
+.custom-card img {
+    width: 100%; /* Ancho completo */
+    position: absolute; /* Posición absoluta para cubrir la tarjeta */
+    backface-visibility: hidden; /* Oculta el reverso de la tarjeta */
+    aspect-ratio: 320 / 480; /* Relación de aspecto de la imagen */
+}
+
+/* Estilo del texto en el reverso de la tarjeta */
+.text {
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    position: absolute; /* Posición absoluta para cubrir la tarjeta */
+    backface-visibility: hidden; /* Oculta el reverso de la tarjeta */
+    transform: rotateY(180deg); /* Gira 180 grados en el eje Y para mostrar el reverso */
+    display: flex; /* Usa el modelo de caja flexible para centrar contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    background-color: var(--background-contactosdark); /* Color de fondo */
+    color: #fff; /* Color del texto */
+    opacity: 0.7; /* Opacidad del reverso de la tarjeta */
+}
+
+/* Estilo adicional para elementos de lista dentro de la tarjeta */
+.liCustom {
+    font-size: 15px; /* Tamaño de fuente para elementos de lista */
+}
+
 
 /* FIN ANIMACIONES */
 
@@ -350,3 +400,8 @@ img {
      https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1
      backgrounds para CONTRATOS
      */
+
+
+    
+
+    
