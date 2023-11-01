@@ -24,7 +24,6 @@ a > img {
   width: 10vw;
   margin-left: 3.5vw;
 }
-
 .nav-link {
   /* Colores letras del nav*/
   color: var(--title-text-color);
@@ -69,6 +68,10 @@ a > img {
   width: 100%;
   text-shadow: 0px 2px 6px black;
   letter-spacing: 4px;
+}
+span{
+    color: var(--background-color-white);
+
 }
 
 /* FIN  ESTILOS SECTION1 */
@@ -180,6 +183,15 @@ h2 {
   font-family: "Montserrat", sans-serif;
   /*Tipo de fuente */
 }
+.h2mod {    
+    font-size: 1.2rem;
+    /* Establece el tamaño de fuente para h2 a 1rem */
+    text-align: left;
+    /* Centra el texto dentro de los elementos h2 */
+    font-family: "Montserrat", sans-serif;
+    /*Tipo de fuente */
+    padding: 2rem 1rem 0rem 2rem;
+  }
 
 /* FIN  ESTILOS SECTION2 */
 /*ESTILOS SECTION3 */
@@ -217,20 +229,28 @@ img {
 /*MEDIA QUERY*/
 @media (min-width: 576px) {
   /* SMALL DEVICE*/
-  strong {
+  strong { /* CAMBIA TAMAÑO DE LA FEUENTE */
     font-size: 20px;
-  }
-  li {
+  } 
+  li { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
     font-size: 18px;
   }
-  h2 {
+  h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
     /* Tamaño */
     font-size: 1.5rem;
+  }
+  .headline{
+    font-size: 3.5rem;
+    transform: translateY(7rem);
   }
 }
 
 @media (min-width: 768px) {
   /* MEDIUM DEVICE*/
+  .navbar-expand-md .navbar-nav .nav-link{
+  padding-right: 3rem;
+  padding-left: 2rem;
+  }
   a > img {
     /* Tamaño logo del NAV*/
     width: 6vw;
@@ -244,21 +264,25 @@ img {
     transform: translateX(3rem) translateY(7rem);
     /* Desplaza las imágenes hacia abajo y hacia al lado */
   }
-  ul {
+  ul { /* QUITA DE LAS LISTAS LOS PUNTOS */
     list-style-type: none;
   }
-  h2 {
+  h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
     font-size: 15px;
   }
   .imgOferta {
-    /* BACKGROUND INICIAL */
+    /* CAMBIA EL BACKGROUND */
     height: 55.5rem;
     background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080");
   }
   .imgOfertaContratos {
-    /* BACKGROUND INICIAL */
+    /* CAMBIA EL BACKGROUND */
     height: 55.5rem;
     background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1");
+  }
+  .headline{
+    font-size: 5.5rem;
+    transform: translateY(7rem);
   }
 }
 
@@ -277,12 +301,12 @@ img {
     font-size: 25px;
   }
   .imgOferta {
-    /* BACKGROUND INICIAL */
+    /* CAMBIA EL BACKGROUND */
     height: 56.5rem;
     background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080");
   }
   .imgOfertaContratos {
-    /* BACKGROUND INICIAL */
+    /* CAMBIA EL BACKGROUND */
     height: 55.5rem;
     background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1");
   }
@@ -295,16 +319,16 @@ img {
     width: 5vw;
     margin-left: 2.0vw;
   }
-  li {
+  li { /* CAMBIA TAMAÑO DE LA FEUENTE */
     font-size: 24px;
   }
-  h2 {
+  h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
     font-size: 30px;
   }
-  .h1-mod {
+  .h1-mod { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
     font-size: 30px;
   }
-  strong {
+  strong { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
     font-size: 24px;
   }
 }
@@ -316,20 +340,45 @@ img {
     width: 4vw;
     margin-left: 1.5vw;
   }
-  li {
+  li {  /* CAMBIA TAMAÑO DE LA FEUENTE */
     font-size: 28px;
   }
-  h2 {
+  h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
     font-size: 34px;
   }
-  .h1-mod {
+  .h1-mod { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
     font-size: 34px;
   }
-  strong {
+  strong { /* CAMBIA TAMAÑO DE LA FEUENTE */
     font-size: 28px;
   }
 }
-
+@media (min-width: 1700px) {
+    /* EXTRA-EXTRA-LARGE DEVICE*/
+    a > img {
+      /* Tamaño logo del NAV*/
+      width: 2.5vw;
+      margin-left: 1.5vw;
+    }
+    li {  /* CAMBIA TAMAÑO DE LA FEUENTE */
+      font-size: 28px;
+    }
+    h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
+      font-size: 34px;
+    }
+    .h1-mod { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
+      font-size: 34px;
+    }
+    strong { /* CAMBIA TAMAÑO DE LA FEUENTE */
+      font-size: 28px;
+    }
+    .translated-md1{
+    transform:translateY(3rem);
+    }
+    .translated-md1{
+    transform:translateY(3rem);
+    }
+}
 /*FIN MEDIA QUERY*/
 /* ANIMACIONES */
 @-webkit-keyframes fade-in {
@@ -387,6 +436,17 @@ img {
     opacity: 0.7; /* Opacidad del reverso de la tarjeta */
 }
 
+.custom-card-container:first-of-type .text, .custom-card-container:last-of-type .text{
+    background-color: var(--boton-color);
+    color: black;
+    font-weight: bold;
+
+}
+.custom-card-container:not(:first-of-type):nth-child(odd) .text{ 
+    background-color: white;
+    color: black;
+
+}
 /* Estilo adicional para elementos de lista dentro de la tarjeta */
 .liCustom {
     font-size: 15px; /* Tamaño de fuente para elementos de lista */
