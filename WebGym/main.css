@@ -61,7 +61,10 @@ a>img {
 
 /* FIN  ESTILOS SECTION1 */
 /* ESTILOS SECTION2 */
-div>img {
+.paddingBlock{
+    padding-block: 3rem;
+}
+.translated{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
     /* Añade una sombra con un desplazamiento de 4px en horizontal y 4px en vertical a las imágenes dentro de un elemento div */
     transform: translateY(40px);
@@ -79,10 +82,44 @@ div>img {
 }
 
 h1 {
-    font-weight: bold;
+    text-transform: uppercase;
+    /*Pasarlo a mayusculas */
+    line-height: 1.1;
+    /*Separacion de las lineas*/
+    color: #33414f;
+    /* Color de la letra*/
+    font-weight: 900;
     /* Establece el peso de la fuente a negrita para los elementos h1 */
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* Establece el tamaño de fuente para h1 a 1.5rem */
+    font-size: 32px;
+    /* Establece el tamaño de fuente para h1 a 32px */
+    text-align: left;    
+    /* Texto alineado a la izquierda del DIV */
+    font-family: "Montserrat",sans-serif;
+    /*Tipo de fuente */
+
+}
+.h1-mod {
+    text-shadow: 0px 2px 6px black;
+    /* Sombreado del texto*/
+    transform: translateY(-12px);
+    /* posicionamient oen el EJE Y */
+    text-align: center;
+    /* texto alineado al centro */
+    text-transform: uppercase;
+    /*Pasarlo a mayusculas */
+    line-height: 1.1;
+    /*Separacion de las lineas*/
+    color: var(--background-color-white);
+    /* Color de la letra*/
+    font-weight: 900;
+    /* Establece el peso de la fuente a negrita para los elementos h1 */
+    font-size: 1.3rem;
+    /* Establece el tamaño de fuente para h1 a 32px */
+    font-family: "Montserrat",sans-serif;
+    /*Tipo de fuente */
+
 }
 
 h2 {
@@ -92,6 +129,9 @@ h2 {
     /* Establece el tamaño de fuente para h2 a 1rem */
     text-align: center;
     /* Centra el texto dentro de los elementos h2 */
+    font-family: "Montserrat",sans-serif;
+    /*Tipo de fuente */
+
 }
 
 .btn-check:checked+.btn,.btn.active,.btn.show,.btn:first-child:active,:not(.btn-check)+.btn:active {
@@ -100,10 +140,39 @@ h2 {
 }
 
 
-
-
-
 /* FIN  ESTILOS SECTION2 */
+/*ESTILOS SECTION3 */
+.carousel-item > img{
+    --min-height: 350px; /* Altura de la imagen más pequeña */
+    --min-width: 728px; /** Anchura de la imagen más pequeña */
+    max-width: var(--min-width);
+    max-height: var(--min-height);
+    width: auto;
+    height: auto;
+    margin-inline: auto;
+}
+.carousel-height{
+    padding-block: 2rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.carousel-control-next-icon::after, .carousel-control-prev-icon::after{
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    content:"";
+    position: absolute;
+    inset: -0.5rem;
+
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    position: relative;
+}
+
+/*FIN ESTILOS SECTION3 */
+
+
 
 
 
@@ -117,7 +186,7 @@ h2 {
 }
 
 @media (min-width: 992px) {
-    /* LARGE DEVICE*/
+    /* LARGE DEVICE*/   
 }
 
 @media (min-width: 1200px) {
