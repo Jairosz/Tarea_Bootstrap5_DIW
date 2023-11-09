@@ -3,3 +3,6 @@ document.addEventListener('scroll', function() {
     element.style.animationPlayState = 'running';
 }, { once: true });
 
+
+
+

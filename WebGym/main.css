@@ -14,498 +14,586 @@
 
 /* COLORES */
 :root {
-    --background-color-white: rgb(255, 255, 255);
-    --background-color-grey: rgb(64, 78, 91);
-    --background-color-grey-faded: rgb(29, 33, 40);
-    --boton-color: rgb(222, 192, 0);
-    --title-text-color: rgb(51, 65, 79);
-    --title-text-msg: rgb(255, 255, 255);
-    --background-contactos: rgb(189, 91, 149);
-    --background-contactosdark: rgb(141, 29, 94);
+  --background-color-white: rgb(255, 255, 255);
+  --background-color-grey: rgb(64, 78, 91);
+  --background-color-grey-faded: rgb(29, 33, 40);
+  --boton-color: rgb(222, 192, 0);
+  --title-text-color: rgb(51, 65, 79);
+  --title-text-msg: rgb(255, 255, 255);
+  --background-contactos: rgb(189, 91, 149);
+  --background-contactosdark: rgb(141, 29, 94);
+}
+
+/* FIN COLORES */
+/* ESTILOS DEL NAVBAR */
+a > img {
+  /* Tamaño logo del NAV*/
+  width: 10vw;
+  margin-left: 3.5vw;
+}
+.nav-link {
+  /* Colores letras del nav*/
+  color: var(--title-text-color);
+  font-weight: bold;
+}
+.imgMaxHeight {
+  max-height: 420px;
+}
+.navbar-light .nav-link:hover {
+  /* Color Hover del NAV*/
+  color: var(--boton-color);
+}
+
+/* FIN ESTILOS DEL NAVBAR */
+/* ESTILOS SECTION1 */
+.imgOferta {
+  /* BACKGROUND INICIAL */
+  background-repeat: no-repeat;
+  height: 36.8rem;
+  background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030558/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565");
+  background-size: cover;
+  -webkit-animation: fade-in 2s ease-in-out;
+  animation: fade-in 2s ease-in-out;
+}
+.imgOfertaContratos {
+  /* BACKGROUND INICIAL */
+  background-repeat: no-repeat;
+  height: 36.8rem;
+  background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030557/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565_1");
+  background-size: cover;
+  -webkit-animation: fade-in 2s ease-in-out;
+  animation: fade-in 2s ease-in-out;
+}
+
+.headline {
+  /* MEGACHOLLO STYLE */
+  /* CAMBIAR POSICION */
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 200%;
+  width: 100%;
+  text-shadow: 0px 2px 6px black;
+  letter-spacing: 4px;
+}
+span {
+  color: var(--background-color-white);
+}
+
+/* FIN  ESTILOS SECTION1 */
+/* ESTILOS SECTION2 */
+#AppButton {
+  /* ESTILOS BOTONES */
+  background-color: var(--boton-color);
+  color: var(--background-color-white);
+}
+#AppButton:hover {
+  /* ESTILOS BOTONES HOVER */
+  background-color: var(--background-color-grey);
+  color: white;
+}
+
+.paddingBlock {
+  padding-block: 3rem 1.5rem;
+}
+.translated {
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  /* Añade una sombra con un desplazamiento de 4px en horizontal y 4px en vertical a las imágenes dentro de un elemento div */
+  -webkit-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  transform: translateY(40px);
+  /* Desplaza las imágenes hacia abajo 40px */
+}
+
+.bg-grey {
+  background-color: var(--background-color-grey);
+  /* Define el color de fondo para elementos con la clase "bg-grey" utilizando una variable CSS personalizada */
+}
+
+.bg-white {
+  background-color: var(--background-color-white);
+  /* Define el color de fondo para elementos con la clase "bg-white" utilizando una variable CSS personalizada */
+}
+.bg-darkpink {
+  background-color: var(--background-contactos);
+}
+
+h1 {
+  text-transform: uppercase;
+  /*Pasarlo a mayusculas */
+  line-height: 1.1;
+  /*Separacion de las lineas*/
+  color: #33414f;
+  /* Color de la letra*/
+  font-weight: 900;
+  /* Establece el peso de la fuente a negrita para los elementos h1 */
+  font-size: 2rem;
+  /* Establece el tamaño de fuente para h1 a 1.5rem */
+  font-size: 32px;
+  /* Establece el tamaño de fuente para h1 a 32px */
+  text-align: left;
+  /* Texto alineado a la izquierda del DIV */
+  font-family: "Montserrat", sans-serif;
+  /*Tipo de fuente */
+}
+.h1-mod {
+  text-shadow: 0px 2px 6px black;
+  /* Sombreado del texto*/
+  -webkit-transform: translateY(-12px);
+  -ms-transform: translateY(-12px);
+  transform: translateY(-12px);
+  /* posicionamient oen el EJE Y */
+  text-align: center;
+  /* texto alineado al centro */
+  text-transform: uppercase;
+  /*Pasarlo a mayusculas */
+  line-height: 1.1;
+  /*Separacion de las lineas*/
+  color: var(--background-color-white);
+  /* Color de la letra*/
+  font-weight: 900;
+  /* Establece el peso de la fuente a negrita para los elementos h1 */
+  font-size: 1.3rem;
+  /* Establece el tamaño de fuente para h1 a 32px */
+  font-family: "Montserrat", sans-serif;
+  /*Tipo de fuente */
+}
+.h1-mod2 {
+  text-align: center;
+  /* texto alineado al centro */
+  text-transform: uppercase;
+  /*Pasarlo a mayusculas */
+  line-height: 1.1;
+  /*Separacion de las lineas*/
+  color: var(--background-color-grey);
+  /* Color de la letra*/
+  font-weight: 900;
+  /* Establece el peso de la fuente a negrita para los elementos h1 */
+  font-size: 1.3rem;
+  /* Establece el tamaño de fuente para h1 a 32px */
+  font-family: "Montserrat", sans-serif;
+  /*Tipo de fuente */
+}
+.listaSombreada {
+  text-shadow: 0px 2px 6px black;
+  /* Sombreado del texto*/
+  -webkit-transform: translateY(-12px);
+  -ms-transform: translateY(-12px);
+  transform: translateY(-12px);
+  /* posicionamient oen el EJE Y */
+  color: var(--background-color-white);
+  /* Color de la letra*/
+}
+
+h2 {
+  font-weight: bold;
+  /* Establece el peso de la fuente a negrita para los elementos h2 */
+  font-size: 1rem;
+  /* Establece el tamaño de fuente para h2 a 1rem */
+  text-align: center;
+  /* Centra el texto dentro de los elementos h2 */
+  font-family: "Montserrat", sans-serif;
+  /*Tipo de fuente */
+}
+.h2mod {
+  font-size: 1.2rem;
+  /* Establece el tamaño de fuente para h2 a 1rem */
+  text-align: left;
+  /* Centra el texto dentro de los elementos h2 */
+  font-family: "Montserrat", sans-serif;
+  /*Tipo de fuente */
+  padding: 2rem 1rem 0rem 2rem;
+}
+
+/* FIN  ESTILOS SECTION2 */
+/*ESTILOS SECTION3 */
+.carousel-item > img {
+  --min-height: 350px; /* Altura de la imagen más pequeña */
+  --min-width: 728px; /** Anchura de la imagen más pequeña */
+  max-width: var(--min-width);
+  max-height: var(--min-height);
+  width: auto;
+  height: auto;
+  margin-inline: auto;
+}
+.carousel-height {
+  padding-block: 2rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.carousel-control-next-icon::after,
+.carousel-control-prev-icon::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: relative;
+}
+
+/*FIN ESTILOS SECTION3 */
+
+/*MEDIA QUERY*/
+@media (min-width: 576px) {
+  /* SMALL DEVICE*/
+  strong {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 20px;
   }
-  
-  /* FIN COLORES */
-  /* ESTILOS DEL NAVBAR */
-  a > img {
-    /* Tamaño logo del NAV*/
-    width: 10vw;
-    margin-left: 3.5vw;
+  li {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 18px;
   }
-  .nav-link {
-    /* Colores letras del nav*/
-    color: var(--title-text-color);
-    font-weight: bold;
-  }
-  .imgMaxHeight{
-      max-height: 420px;
-  }
-  .navbar-light .nav-link:hover {
-    /* Color Hover del NAV*/
-    color: var(--boton-color);
-  }
-  
-  /* FIN ESTILOS DEL NAVBAR */
-  /* ESTILOS SECTION1 */
-  .imgOferta {
-    /* BACKGROUND INICIAL */
-    background-repeat: no-repeat;
-    height: 36.8rem;
-    background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030558/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565");
-    background-size: cover;
-    -webkit-animation: fade-in 2s ease-in-out;
-    animation: fade-in 2s ease-in-out;
-  }
-  .imgOfertaContratos {
-      /* BACKGROUND INICIAL */
-      background-repeat: no-repeat;
-      height: 36.8rem;
-      background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030557/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565_1");
-      background-size: cover;
-      -webkit-animation: fade-in 2s ease-in-out;
-      animation: fade-in 2s ease-in-out;
-    }
-  
-  .headline {
-    /* MEGACHOLLO STYLE */
-    /* CAMBIAR POSICION */
-    text-align: center;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 200%;
-    width: 100%;
-    text-shadow: 0px 2px 6px black;
-    letter-spacing: 4px;
-  }
-  span{
-      color: var(--background-color-white);
-  
-  }
-  
-  /* FIN  ESTILOS SECTION1 */
-  /* ESTILOS SECTION2 */
-  #AppButton {
-    /* ESTILOS BOTONES */
-    background-color: var(--boton-color);
-    color: var(--background-color-white);
-  }
-  #AppButton:hover {
-    /* ESTILOS BOTONES HOVER */
-    background-color: var(--background-color-grey);
-    color: white;
-  }
-  
-  .paddingBlock {
-    padding-block: 3rem 1.5rem;
-  }
-  .translated {
-    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-    /* Añade una sombra con un desplazamiento de 4px en horizontal y 4px en vertical a las imágenes dentro de un elemento div */
-    -webkit-transform: translateY(40px);
-        -ms-transform: translateY(40px);
-            transform: translateY(40px);
-    /* Desplaza las imágenes hacia abajo 40px */
-  }
-  
-  .bg-grey {
-    background-color: var(--background-color-grey);
-    /* Define el color de fondo para elementos con la clase "bg-grey" utilizando una variable CSS personalizada */
-  }
-  
-  .bg-white {
-    background-color: var(--background-color-white);
-    /* Define el color de fondo para elementos con la clase "bg-white" utilizando una variable CSS personalizada */
-  }
-  .bg-darkpink{
-      background-color:var(--background-contactos) ;
-  }
-  
-  h1 {
-    text-transform: uppercase;
-    /*Pasarlo a mayusculas */
-    line-height: 1.1;
-    /*Separacion de las lineas*/
-    color: #33414f;
-    /* Color de la letra*/
-    font-weight: 900;
-    /* Establece el peso de la fuente a negrita para los elementos h1 */
-    font-size: 2rem;
-    /* Establece el tamaño de fuente para h1 a 1.5rem */
-    font-size: 32px;
-    /* Establece el tamaño de fuente para h1 a 32px */
-    text-align: left;
-    /* Texto alineado a la izquierda del DIV */
-    font-family: "Montserrat", sans-serif;
-    /*Tipo de fuente */
-  }
-  .h1-mod {
-    text-shadow: 0px 2px 6px black;
-    /* Sombreado del texto*/
-    -webkit-transform: translateY(-12px);
-        -ms-transform: translateY(-12px);
-            transform: translateY(-12px);
-    /* posicionamient oen el EJE Y */
-    text-align: center;
-    /* texto alineado al centro */
-    text-transform: uppercase;
-    /*Pasarlo a mayusculas */
-    line-height: 1.1;
-    /*Separacion de las lineas*/
-    color: var(--background-color-white);
-    /* Color de la letra*/
-    font-weight: 900;
-    /* Establece el peso de la fuente a negrita para los elementos h1 */
-    font-size: 1.3rem;
-    /* Establece el tamaño de fuente para h1 a 32px */
-    font-family: "Montserrat", sans-serif;
-    /*Tipo de fuente */
-  }
-  .h1-mod2 {
-    text-align: center;
-    /* texto alineado al centro */
-    text-transform: uppercase;
-    /*Pasarlo a mayusculas */
-    line-height: 1.1;
-    /*Separacion de las lineas*/
-    color: var(--background-color-grey);
-    /* Color de la letra*/
-    font-weight: 900;
-    /* Establece el peso de la fuente a negrita para los elementos h1 */
-    font-size: 1.3rem;
-    /* Establece el tamaño de fuente para h1 a 32px */
-    font-family: "Montserrat", sans-serif;
-    /*Tipo de fuente */
-  }
-  .listaSombreada {
-    text-shadow: 0px 2px 6px black;
-    /* Sombreado del texto*/
-    -webkit-transform: translateY(-12px);
-        -ms-transform: translateY(-12px);
-            transform: translateY(-12px);
-    /* posicionamient oen el EJE Y */
-    color: var(--background-color-white);
-    /* Color de la letra*/
-  }
-  
   h2 {
-    font-weight: bold;
-    /* Establece el peso de la fuente a negrita para los elementos h2 */
-    font-size: 1rem;
-    /* Establece el tamaño de fuente para h2 a 1rem */
-    text-align: center;
-    /* Centra el texto dentro de los elementos h2 */
-    font-family: "Montserrat", sans-serif;
-    /*Tipo de fuente */
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    /* Tamaño */
+    font-size: 1.5rem;
   }
-  .h2mod {    
-      font-size: 1.2rem;
-      /* Establece el tamaño de fuente para h2 a 1rem */
-      text-align: left;
-      /* Centra el texto dentro de los elementos h2 */
-      font-family: "Montserrat", sans-serif;
-      /*Tipo de fuente */
-      padding: 2rem 1rem 0rem 2rem;
-    }
-  
-  /* FIN  ESTILOS SECTION2 */
-  /*ESTILOS SECTION3 */
-  .carousel-item > img {
-    --min-height: 350px; /* Altura de la imagen más pequeña */
-    --min-width: 728px; /** Anchura de la imagen más pequeña */
-    max-width: var(--min-width);
-    max-height: var(--min-height);
-    width: auto;
-    height: auto;
-    margin-inline: auto;
+  .headline {
+    font-size: 3.5rem;
+    -webkit-transform: translateY(7rem);
+    -ms-transform: translateY(7rem);
+    transform: translateY(7rem);
   }
-  .carousel-height {
-    padding-block: 2rem;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-  }
-  .carousel-control-next-icon::after,
-  .carousel-control-prev-icon::after {
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    content: "";
-    position: absolute;
-    inset: -0.5rem;
-  }
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    position: relative;
-  }
-  
-  /*FIN ESTILOS SECTION3 */
-  
-  /*MEDIA QUERY*/
-  @media (min-width: 576px) {
-    /* SMALL DEVICE*/
-    strong { /* CAMBIA TAMAÑO DE LA FEUENTE */
-      font-size: 20px;
-    } 
-    li { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
-      font-size: 18px;
-    }
-    h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
-      /* Tamaño */
-      font-size: 1.5rem;
-    }
-    .headline{
-      font-size: 3.5rem;
-      -webkit-transform: translateY(7rem);
-          -ms-transform: translateY(7rem);
-              transform: translateY(7rem);
-    }
-  }
-  
-  @media (min-width: 768px) {
-    /* MEDIUM DEVICE*/
-    .navbar-expand-md .navbar-nav .nav-link{
+}
+
+@media (min-width: 768px) {
+  /* MEDIUM DEVICE*/
+  .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 3rem;
     padding-left: 2rem;
-    }
-    a > img {
-      /* Tamaño logo del NAV*/
-      width: 6vw;
-      margin-left: 2.5vw;
-    }
-    .translated-md1 {
-      -webkit-transform: translateX(-2.5rem) translateY(7rem);
-          -ms-transform: translateX(-2.5rem) translateY(7rem);
-              transform: translateX(-2.5rem) translateY(7rem);
-      /* Desplaza las imágenes hacia abajo  y hacia al lado */
-    }
-    .translated-md2 {
-      -webkit-transform: translateX(3rem) translateY(7rem);
-          -ms-transform: translateX(3rem) translateY(7rem);
-              transform: translateX(3rem) translateY(7rem);
-      /* Desplaza las imágenes hacia abajo y hacia al lado */
-    }
-    ul { /* QUITA DE LAS LISTAS LOS PUNTOS */
-      list-style-type: none;
-    }
-    h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
-      font-size: 15px;
-    }
-    .imgOferta {
-      /* CAMBIA EL BACKGROUND */
-      height: 55.5rem;
-      background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080");
-    }
-    .imgOfertaContratos {
-      /* CAMBIA EL BACKGROUND */
-      height: 55.5rem;
-      background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1");
-    }
-    .headline{
-      font-size: 5.5rem;
-      -webkit-transform: translateY(7rem);
-          -ms-transform: translateY(7rem);
-              transform: translateY(7rem);
-    }
   }
-  
-  @media (min-width: 992px) {
-    /* LARGE DEVICE*/
-    a > img {
-      /* Tamaño logo del NAV*/
-      width: 4vw;
-      margin-left: 2.0vw;
-    }
-    .translated-md2 {
-       -webkit-transform: translateX(3rem) translateY(3.5rem);
-           -ms-transform: translateX(3rem) translateY(3.5rem);
-               transform: translateX(3rem) translateY(3.5rem); 
-      /* Desplaza las imágenes hacia abajo y hacia al lado */
-    }
-    h2 {
-      font-size: 25px;
-    }
-    .imgOferta {
-      /* CAMBIA EL BACKGROUND */
-      height: 56.5rem;
-      background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080");
-    }
-    .imgOfertaContratos {
-      /* CAMBIA EL BACKGROUND */
-      height: 55.5rem;
-      background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1");
-    }
+  a > img {
+    /* Tamaño logo del NAV*/
+    width: 6vw;
+    margin-left: 2.5vw;
   }
-  
-  @media (min-width: 1200px) {
-    /* EXTRA-LARGE DEVICE*/
-    a > img {
-      /* Tamaño logo del NAV*/
-      width: 5vw;
-      margin-left: 2.0vw;
-    }
-    li { /* CAMBIA TAMAÑO DE LA FEUENTE */
-      font-size: 24px;
-    }
-    h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
-      font-size: 30px;
-    }
-    .h1-mod { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
-      font-size: 30px;
-    }
-    strong { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
-      font-size: 24px;
-    }
+  .translated-md1 {
+    -webkit-transform: translateX(-2.5rem) translateY(7rem);
+    -ms-transform: translateX(-2.5rem) translateY(7rem);
+    transform: translateX(-2.5rem) translateY(7rem);
+    /* Desplaza las imágenes hacia abajo  y hacia al lado */
   }
-  
-  @media (min-width: 1400px) {
-    /* EXTRA-EXTRA-LARGE DEVICE*/
-    a > img {
-      /* Tamaño logo del NAV*/
-      width: 4vw;
-      margin-left: 1.5vw;
-    }
-    li {  /* CAMBIA TAMAÑO DE LA FEUENTE */
-      font-size: 28px;
-    }
-    h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
-      font-size: 34px;
-    }
-    .h1-mod { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
-      font-size: 34px;
-    }
-    strong { /* CAMBIA TAMAÑO DE LA FEUENTE */
-      font-size: 28px;
-    }
+  .translated-md2 {
+    -webkit-transform: translateX(3rem) translateY(7rem);
+    -ms-transform: translateX(3rem) translateY(7rem);
+    transform: translateX(3rem) translateY(7rem);
+    /* Desplaza las imágenes hacia abajo y hacia al lado */
   }
-  @media (min-width: 1700px) {
-      /* EXTRA-EXTRA-LARGE DEVICE*/
-      a > img {
-        /* Tamaño logo del NAV*/
-        width: 2.5vw;
-        margin-left: 1.5vw;
-      }
-      li {  /* CAMBIA TAMAÑO DE LA FEUENTE */
-        font-size: 28px;
-      }
-      h2 { /* CAMBIA TAMAÑO DE LA FEUENTE */
-        font-size: 34px;
-      }
-      .h1-mod { /* CAMBIA TAMAÑO DE LA FEUENTE */ 
-        font-size: 34px;
-      }
-      strong { /* CAMBIA TAMAÑO DE LA FEUENTE */
-        font-size: 28px;
-      }
-      .translated-md1{
-      -webkit-transform:translateY(3rem);
-          -ms-transform:translateY(3rem);
-              transform:translateY(3rem);
-      }
-      .translated-md1{
-      -webkit-transform:translateY(3rem);
-          -ms-transform:translateY(3rem);
-              transform:translateY(3rem);
-      }
+  ul {
+    /* QUITA DE LAS LISTAS LOS PUNTOS */
+    list-style-type: none;
   }
-  /*FIN MEDIA QUERY*/
-  /* ANIMACIONES */
-  @-webkit-keyframes fade-in {
-    0% {
-      opacity: 0;
-      /* Inicio con opacidad 0 (invisible) */
-    }
-  
-    100% {
-      opacity: 1;
-      /* Final con opacidad 1 (visible) */
-    }
+  h2 {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 15px;
   }
-  /* Configuración del contenedor principal con perspectiva para la animación */
-  .wrapper-inner {
-      -webkit-perspective: 1000px;
-              perspective: 1000px; /* Efecto de perspectiva en 3D para la animación */
-      height: 100%; /* Establece la altura del contenedor */
-      min-height: 20rem; /* Altura mínima para evitar cambios bruscos en el diseño */
+  .imgOferta {
+    /* CAMBIA EL BACKGROUND */
+    height: 55.5rem;
+    background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080");
   }
-  
-  /* Estilo de la tarjeta personalizada que se animará */
-  .custom-card {
-      width: 100%; /* Ancho completo */
-      aspect-ratio: 320 / 480; /* Relación de aspecto de la tarjeta (ancho/alto) */
-      position: relative; /* Posición relativa para elementos secundarios */
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d; /* Mantiene el estilo 3D para la animación */
-      -webkit-transition: -webkit-transform 0.5s;
-      transition: -webkit-transform 0.5s;
-      -o-transition: transform 0.5s;
-      transition: transform 0.5s;
-      transition: transform 0.5s, -webkit-transform 0.5s; /* Transición suave para la rotación de la tarjeta */
+  .imgOfertaContratos {
+    /* CAMBIA EL BACKGROUND */
+    height: 55.5rem;
+    background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1");
   }
-  
-  /* Rotación de la tarjeta cuando el ratón está encima */
-  .wrapper-inner:hover .custom-card {
-      -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg); /* Gira 180 grados en el eje Y al pasar el ratón */
+  .headline {
+    font-size: 5.5rem;
+    -webkit-transform: translateY(7rem);
+    -ms-transform: translateY(7rem);
+    transform: translateY(7rem);
   }
-  
-  /* Estilo de la imagen en la tarjeta */
-  .custom-card img {
-      width: 100%; /* Ancho completo */
-      position: absolute; /* Posición absoluta para cubrir la tarjeta */
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden; /* Oculta el reverso de la tarjeta */
-      aspect-ratio: 320 / 480; /* Relación de aspecto de la imagen */
+}
+
+@media (min-width: 992px) {
+  /* LARGE DEVICE*/
+  a > img {
+    /* Tamaño logo del NAV*/
+    width: 4vw;
+    margin-left: 2vw;
   }
-  
-  /* Estilo del texto en el reverso de la tarjeta */
-  .text {
-      width: 100%; /* Ancho completo */
-      height: 100%; /* Altura completa */
-      position: absolute; /* Posición absoluta para cubrir la tarjeta */
-      -webkit-backface-visibility: hidden;
-              backface-visibility: hidden; /* Oculta el reverso de la tarjeta */
-      -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg); /* Gira 180 grados en el eje Y para mostrar el reverso */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; /* Usa el modelo de caja flexible para centrar contenido */
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; /* Centra horizontalmente el contenido */
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; /* Centra verticalmente el contenido */
-      background-color: var(--background-contactosdark); /* Color de fondo */
-      color: #fff; /* Color del texto */
-      opacity: 0.7; /* Opacidad del reverso de la tarjeta */
+  .translated-md2 {
+    -webkit-transform: translateX(3rem) translateY(3.5rem);
+    -ms-transform: translateX(3rem) translateY(3.5rem);
+    transform: translateX(3rem) translateY(3.5rem);
+    /* Desplaza las imágenes hacia abajo y hacia al lado */
   }
-  
-  .custom-card-container:first-of-type .text, .custom-card-container:last-of-type .text{
-      background-color: var(--boton-color);
-      color: black;
-      font-weight: bold;
-  
+  h2 {
+    font-size: 25px;
   }
-  .custom-card-container:not(:first-of-type):nth-child(odd) .text{ 
-      background-color: white;
-      color: black;
-  
+  .imgOferta {
+    /* CAMBIA EL BACKGROUND */
+    height: 56.5rem;
+    background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Desktop_1920x1080");
   }
-  /* Estilo adicional para elementos de lista dentro de la tarjeta */
-  .liCustom {
-      font-size: 15px; /* Tamaño de fuente para elementos de lista */
+  .imgOfertaContratos {
+    /* CAMBIA EL BACKGROUND */
+    height: 55.5rem;
+    background-image: url("https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1");
   }
-  
-  
-  /* FIN ANIMACIONES */
-  
-  /*anotaciones 
+}
+
+@media (min-width: 1200px) {
+  /* EXTRA-LARGE DEVICE*/
+  a > img {
+    /* Tamaño logo del NAV*/
+    width: 5vw;
+    margin-left: 2vw;
+  }
+  li {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 24px;
+  }
+  h2 {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 30px;
+  }
+  .h1-mod {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 30px;
+  }
+  strong {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* EXTRA-EXTRA-LARGE DEVICE*/
+  a > img {
+    /* Tamaño logo del NAV*/
+    width: 4vw;
+    margin-left: 1.5vw;
+  }
+  li {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 28px;
+  }
+  h2 {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 34px;
+  }
+  .h1-mod {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 34px;
+  }
+  strong {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 28px;
+  }
+}
+@media (min-width: 1700px) {
+  /* EXTRA-EXTRA-LARGE DEVICE*/
+  a > img {
+    /* Tamaño logo del NAV*/
+    width: 2.5vw;
+    margin-left: 1.5vw;
+  }
+  li {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 28px;
+  }
+  h2 {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 34px;
+  }
+  .h1-mod {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 34px;
+  }
+  strong {
+    /* CAMBIA TAMAÑO DE LA FEUENTE */
+    font-size: 28px;
+  }
+  .translated-md1 {
+    -webkit-transform: translateY(3rem);
+    -ms-transform: translateY(3rem);
+    transform: translateY(3rem);
+  }
+  .translated-md1 {
+    -webkit-transform: translateY(3rem);
+    -ms-transform: translateY(3rem);
+    transform: translateY(3rem);
+  }
+}
+/*FIN MEDIA QUERY*/
+/* ANIMACIONES */
+/* Configuración del contenedor principal con perspectiva para la animación */
+.wrapper-inner {
+  -webkit-perspective: 1000px;
+  perspective: 1000px; /* Efecto de perspectiva en 3D para la animación */
+  height: 100%; /* Establece la altura del contenedor */
+  min-height: 20rem; /* Altura mínima para evitar cambios bruscos en el diseño */
+}
+
+/* Estilo de la tarjeta personalizada que se animará */
+.custom-card {
+  width: 100%; /* Ancho completo */
+  aspect-ratio: 320 / 480; /* Relación de aspecto de la tarjeta (ancho/alto) */
+  position: relative; /* Posición relativa para elementos secundarios */
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; /* Mantiene el estilo 3D para la animación */
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; /* Transición suave para la rotación de la tarjeta */
+}
+
+/* Rotación de la tarjeta cuando el ratón está encima */
+.wrapper-inner:hover .custom-card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(
+    180deg
+  ); /* Gira 180 grados en el eje Y al pasar el ratón */
+}
+
+/* Estilo de la imagen en la tarjeta */
+.custom-card img {
+  width: 100%; /* Ancho completo */
+  position: absolute; /* Posición absoluta para cubrir la tarjeta */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; /* Oculta el reverso de la tarjeta */
+  aspect-ratio: 320 / 480; /* Relación de aspecto de la imagen */
+}
+
+/* Estilo del texto en el reverso de la tarjeta */
+.text {
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  position: absolute; /* Posición absoluta para cubrir la tarjeta */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; /* Oculta el reverso de la tarjeta */
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(
+    180deg
+  ); /* Gira 180 grados en el eje Y para mostrar el reverso */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Usa el modelo de caja flexible para centrar contenido */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; /* Centra verticalmente el contenido */
+  background-color: var(--background-contactosdark); /* Color de fondo */
+  color: #fff; /* Color del texto */
+  opacity: 0.7; /* Opacidad del reverso de la tarjeta */
+}
+
+.custom-card-container:first-of-type .text,
+.custom-card-container:last-of-type .text {
+  background-color: var(--boton-color);
+  color: black;
+  font-weight: bold;
+}
+.custom-card-container:not(:first-of-type):nth-child(odd) .text {
+  background-color: white;
+  color: black;
+}
+/* Estilo adicional para elementos de lista dentro de la tarjeta */
+.liCustom {
+  font-size: 15px; /* Tamaño de fuente para elementos de lista */
+}
+.rotateAnimation:hover {
+  /* Se aplica la animación de rotación con una duración de 2 segundos */
+  animation: rotateAnimation 2s;
+}
+
+.scaleAnimation:hover {
+  /* Se aplica la animación de escala con una duración de 2 segundos */
+  animation: scaleAnimation 2s;
+}
+
+.skewAnimation:hover {
+  /* Se aplica la animación de inclinación con una duración de 2 segundos */
+  animation: skewAnimation 2s;
+}
+
+.translateAnimation:hover {
+  /* Se aplica la animación de traslación  con una duración de 2 segundos */
+  animation: translateAnimation 2s;
+}
+
+.completeAnimation:hover {
+  /* Se aplica la animación completa  con una duración de 2 segundos */
+  animation: completeAnimation 2s;
+}
+
+/* Definición de la animación de rotación*/
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Definición de la animación de escala */
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Definición de la animación de inclinación */
+@keyframes skewAnimation {
+  from {
+    transform: skew(0deg);
+  }
+  to {
+    transform: skew(30deg);
+  }
+}
+
+/* Definición de la animación de traslación */
+@keyframes translateAnimation {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(50px, 50px);
+  }
+}
+
+/* Definición de la animación completa que combina varias transformaciones */
+@keyframes completeAnimation {
+  from {
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0px, 0px);
+  }
+  to {
+    transform: rotate(360deg) scale(1.5) skew(30deg) translate(50px, 50px);
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    /* Inicio con opacidad 0 (invisible) */
+  }
+
+  100% {
+    opacity: 1;
+    /* Final con opacidad 1 (visible) */
+  }
+}
+
+
+/* FIN ANIMACIONES */
+
+/*anotaciones 
        https://res.cloudinary.com/mcfit/image/upload/q_auto,f_auto/v1697030557/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage_Mobile_1080x2565_1
        https://res.cloudinary.com/mcfit/image/upload/q_auto:best,f_auto,dpr_2/v1697030559/McFIT%20Kampagnen/2023_Mega-Deal/ES/McFIT_ES_MegaDeal_Media-Stage-Desktop_1920x1080_1
        backgrounds para CONTRATOS
        */
-  
-  
-      
-  
-      
