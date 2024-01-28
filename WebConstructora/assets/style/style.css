@@ -1,56 +1,33 @@
-/* Estilos para evitar conflictos con Bootstrap */
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;
+}
+
 body {
-    background-image: url(../images/bg1.jpg);
-    /* ...otros estilos para el cuerpo de la página... */
-  }
-  
-  /* Estilos específicos para el navbar */
-  header {
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-  }
-  
-  a {
-    position: relative;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    color: black !important;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-  }
-  
-  a:after {
-    content: "";
-    position: absolute;
-    background-color: black;
-    height: 6px;
-    width: 0;
-    left: 0;
-    bottom: -2px;
-    transition: 0.3s;
-  }
-  
-  a:hover:after {
-    width: 100%;
-  }
-  
-  nav {
-    background-color: white;
-  }
-  
-  .nav-item {
-    margin-left: 1rem;
-  }
-  
-  ul {
-    justify-content: center;
-  }
-  
-  /* Ajustes específicos para las columnas de Bootstrap */
-  .row > * {
-    padding-right: 0;
-    padding-left: 0;
-    margin-top: var(--bs-gutter-y);
-  }
-  
+  background-color: var(--main-bg-color);
+}
+
+h1 {
+  color: var(--main-text-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  transition: background-size 0.5s ease; /* Transición de 0.5 segundos para cambiar el tamaño del fondo */
+  font-size: 14rem;
+}
+
+h1:hover {
+  color: #333;
+  font-weight: 700;
+  -moz-transition:color 0.5s, font-weight 0.5s;
+  -webkit-transition: color 0.5s, font-family 0.5s;
+  -o-transition: color 0.5s, font-weight  0.5s;
+  transition: color 0.5s, font-weight 0.5s;
+}
+
+.logo--main {
+  width: 8vw;
+  height: 6vh;
+  position: absolute;
+  top: 9%;
+  left: 4%;
+}
