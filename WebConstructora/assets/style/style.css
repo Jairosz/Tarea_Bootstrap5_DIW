@@ -8,6 +8,12 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+#carouselId {
+  max-width: 80%; /* Puedes ajustar el tamaño según tus preferencias */
+  margin: 0 auto; /* Centrar el carrusel en la página */
+  transform: translateX(-5%); /* Ajusta el valor según la cantidad que desees mover hacia la izquierda */
+}
+
 section{
   position: relative;
   width: 100%;
@@ -17,6 +23,9 @@ section{
   align-items: center;
   background: black;
   overflow: hidden;
+}
+.carousel-indicators{
+  bottom: 100px;
 }
 ul{
   position: relative;
@@ -72,9 +81,40 @@ body {
   top: -30%;
   left: 4%;
 }
+.carousel-control-next-icon::after,
+.carousel-control-prev-icon::after {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: relative;
+}
+.image-container {
+  display: flex;
+  position: absolute;
+  width: 90%; 
+  animation: moveImages 10s ease-in-out 2; 
+  z-index: 1;
+}
 
-    
+.image {
+  width: 5vw;
+  height: 4vh;
+  object-fit: cover;
+}
 
+@keyframes moveImages {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-200%); /* Ajusta según el número de imágenes y su ancho */
+  }
+}
 /* @keyframes menuHover {
   0% {
     font-weight: 680;
