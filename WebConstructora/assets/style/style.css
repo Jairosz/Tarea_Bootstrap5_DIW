@@ -2,32 +2,161 @@
   --main-bg-color: black;
   --main-text-color: white;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: black;
+  overflow: hidden;
+}
+ul{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+ul li{
+  list-style-type: none;
+}
+ul li a{
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--main-text-color);
+  font-weight: bold;
+  transition: 0.5s;
+}
+ul li a:hover{
+  color: rgba(255,255,255,0.1);
+  transform: translateY(-20px);
+  transition-delay: 0s;
+}
+ul li a:before{
+ content: attr(data-text);
+ position: absolute;
+ bottom: -10px;
+ pointer-events: none;
+ z-index: 1;
+ font-size: 1rem;
+ color: #3bffe8;
+ font-weight: bold;
+ letter-spacing: 100px;
+ opacity: 0;
+ transition: 0.5s;
+ text-shadow: 0 0 10px #3bffe8,
+ 0 0 30px #3bffe8,
+ 0 0 80px #3bffe8;
+}
+ul li a:hover::before{
+  letter-spacing: 6px;
+  opacity: 1;
+}
 body {
   background-color: var(--main-bg-color);
-}
-
-h1 {
-  color: var(--main-text-color);
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  transition: background-size 0.5s ease; /* Transición de 0.5 segundos para cambiar el tamaño del fondo */
-  font-size: 14rem;
-}
-
-h1:hover {
-  color: #333;
-  font-weight: 700;
-  -moz-transition:color 0.5s, font-weight 0.5s;
-  -webkit-transition: color 0.5s, font-family 0.5s;
-  -o-transition: color 0.5s, font-weight  0.5s;
-  transition: color 0.5s, font-weight 0.5s;
 }
 
 .logo--main {
   width: 8vw;
   height: 6vh;
   position: absolute;
-  top: 9%;
+  top: -30%;
   left: 4%;
 }
+
+    
+
+/* @keyframes menuHover {
+  0% {
+    font-weight: 680;
+  }
+
+  5% {
+    font-weight: 660;
+  }
+
+  10% {
+    font-weight: 640;
+  }
+
+  15% {
+    font-weight: 620;
+  }
+
+  20% {
+    font-weight: 600;
+  }
+
+  25% {
+    font-weight: 580;
+  }
+
+  30% {
+    font-weight: 560;
+  }
+
+  35% {
+    font-weight: 540;
+  }
+
+  40% {
+    font-weight: 520;
+  }
+
+  45% {
+    font-weight: 500;
+  }
+
+  50% {
+    font-weight: 480;
+  }
+
+  55% {
+    font-weight: 460;
+  }
+
+  60% {
+    font-weight: 440;
+  }
+
+  65% {
+    font-weight: 420;
+  }
+
+  70% {
+    font-weight: 400;
+  }
+
+  75% {
+    font-weight: 380;
+  }
+
+  80% {
+    font-weight: 360;
+  }
+
+  85% {
+    font-weight: 340;
+  }
+
+  90% {
+    font-weight: 320;
+  }
+
+  95% {
+    font-weight: 300;
+  }
+
+  100% {
+    font-weight: 280;
+  }
+} */
