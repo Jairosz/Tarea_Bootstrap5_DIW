@@ -50,7 +50,7 @@ ul li a:hover {
   transform: translateY(-20px);
   transition-delay: 0s;
 }
-ul li a:before {
+ul li a.li1:before {
   content: attr(data-text);
   position: absolute;
   bottom: -10px;
@@ -61,6 +61,33 @@ ul li a:before {
   letter-spacing: 100px;
   opacity: 0;
   transition: 0.5s;
+  text-shadow: 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 80px #00ff00;
+}
+ul li a.li2:before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: -10px;
+  pointer-events: none;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 100px;
+  opacity: 0;
+  transition: 0.5s;
+  text-shadow: 0 0 10px #ff99cc, 0 0 30px #ff99cc, 0 0 80px #ff99cc;
+}
+ul li a.li3:before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: -10px;
+  pointer-events: none;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 100px;
+  opacity: 0;
+  transition: 0.5s;
+  text-shadow: 0 0 10px #ff3801, 0 0 30px #ff3801, 0 0 80px #ff3801;
 }
 ul li a:hover::before {
   letter-spacing: 6px;
@@ -136,7 +163,7 @@ body {
   height: 10vh;
   background-color: #ff99cc;
   position: absolute;
-  top: 48%;
+  top: 45%;
   left: 37%;
   z-index: 0;
 }
@@ -144,7 +171,7 @@ body {
   height: 10vh;
   background-color: #ff3801;
   position: absolute;
-  top: 68%;
+  top: 65%;
   left: 39%;
   z-index: 0;
 }
