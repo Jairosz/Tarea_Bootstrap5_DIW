@@ -9,9 +9,9 @@
   font-family: 'Poppins',sans-serif;
 }
 #carouselId {
-  max-width: 80%; /* Puedes ajustar el tamaño según tus preferencias */
-  margin: 0 auto; /* Centrar el carrusel en la página */
-  transform: translateX(-5%); /* Ajusta el valor según la cantidad que desees mover hacia la izquierda */
+  max-width: 80%; 
+  margin: 0 auto; 
+  transform: translateX(-5%); 
 }
 
 section{
@@ -112,91 +112,6 @@ body {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-200%); /* Ajusta según el número de imágenes y su ancho */
+    transform: translateX(20%); /* Ajusta según el número de imágenes y su ancho */
   }
 }
-/* @keyframes menuHover {
-  0% {
-    font-weight: 680;
-  }
-
-  5% {
-    font-weight: 660;
-  }
-
-  10% {
-    font-weight: 640;
-  }
-
-  15% {
-    font-weight: 620;
-  }
-
-  20% {
-    font-weight: 600;
-  }
-
-  25% {
-    font-weight: 580;
-  }
-
-  30% {
-    font-weight: 560;
-  }
-
-  35% {
-    font-weight: 540;
-  }
-
-  40% {
-    font-weight: 520;
-  }
-
-  45% {
-    font-weight: 500;
-  }
-
-  50% {
-    font-weight: 480;
-  }
-
-  55% {
-    font-weight: 460;
-  }
-
-  60% {
-    font-weight: 440;
-  }
-
-  65% {
-    font-weight: 420;
-  }
-
-  70% {
-    font-weight: 400;
-  }
-
-  75% {
-    font-weight: 380;
-  }
-
-  80% {
-    font-weight: 360;
-  }
-
-  85% {
-    font-weight: 340;
-  }
-
-  90% {
-    font-weight: 320;
-  }
-
-  95% {
-    font-weight: 300;
-  }
-
-  100% {
-    font-weight: 280;
-  }
-} */
