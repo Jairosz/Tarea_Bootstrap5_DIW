@@ -8,12 +8,50 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 #carouselId {
   max-width: 80%;
   margin: 0 auto;
   transform: translateX(-5%);
 }
+.customnavbar2{
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--main-text-color);
+  
+}
+.customnavbar2 ul li.custom1:hover{
+  text-shadow: 0 0 10px #00ff00;
+}
+.customnavbar2 ul li.custom2:hover{
+  text-shadow: 0 0 10px #ff99cc;
+}
+.customnavbar2 ul li.custom3:hover{
+  text-shadow: 0 0 10px #ff3801;
+}
+.tarjetaProductos{
+  padding-top: 4rem;
+  padding-left: 4rem;
+}
+.productoIntermedio{
+  margin-left: 4rem;
+}
+.card{
+  background-color: #212529;
+  color: var(--main-text-color);
+  text-align: center;
+}
+.btnCustom{
+  background-color: var(--main-text-color);
+  border-color: var(--main-text-color);
+  color: var(--main-bg-color);
+}
+.btnCustom:hover{
+  background-color: var(--main-bg-color);
+  border-color: var(--main-bg-color);
+  color: var(--main-text-color);
 
+}
 section {
   position: relative;
   width: 100%;
@@ -27,15 +65,15 @@ section {
 .carousel-indicators {
   bottom: 100px;
 }
-ul {
+ul.custom {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-ul li {
+ul li.custom {
   list-style-type: none;
 }
-ul li a {
+ul li a.custom {
   position: relative;
   display: block;
   text-decoration: none;
@@ -45,7 +83,7 @@ ul li a {
   font-weight: bold;
   transition: 0.5s;
 }
-ul li a:hover {
+ul li a.custom:hover {
   color: rgba(255, 255, 255, 0.1);
   transform: translateY(-20px);
   transition-delay: 0s;
@@ -89,7 +127,7 @@ ul li a.li3:before {
   transition: 0.5s;
   text-shadow: 0 0 10px #ff3801, 0 0 30px #ff3801, 0 0 80px #ff3801;
 }
-ul li a:hover::before {
+ul li a.custom:hover::before {
   letter-spacing: 6px;
   opacity: 1;
 }
@@ -104,6 +142,11 @@ body {
   position: absolute;
   top: -30%;
   left: 4%;
+}
+.logo--products {
+  width: 8vw;
+  height: 6vh;
+  padding-left: 1.5rem;
 }
 .carousel-control-next-icon::after,
 .carousel-control-prev-icon::after {
@@ -183,4 +226,64 @@ body {
   50% {
     transform: translateX(15%);
   }
+}
+.image-container404 {
+  display: flex;
+  position: absolute;
+  width: 40%;
+  top: 35%;
+  left: 43%;
+  z-index: 2;
+}
+.btnCustom2{
+  background-color: #ff3801;
+  border-color: #ff3801;
+  color:#ff99cc;
+  font-weight: bold;
+}
+.btnCustom2:hover{
+  background-color: #ff99cc;
+  border-color: #ff99cc;
+  color:#ff3801;
+  font-weight: bold;
+}
+@media (max-width: 400px) { 
+  ul li a.custom {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--main-text-color);
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  #carouselId {
+    max-width: 90%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    height: 10rem;
+  }
+  .decoration1{
+    display: none;
+  }
+  .decoration2{
+    display: none;
+  }
+  .decoration3{
+    display: none;
+  }
+  .logo--main {
+    width: 30vw;
+    height: 6vh;
+    position: absolute;
+    top: -30%;
+    left: 15%;
+  }
+.image-container{
+  display: none;
+}
+.carousel-indicators{
+  display: none
+}
 }
